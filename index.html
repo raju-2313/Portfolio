@@ -11,8 +11,20 @@
 </head>
 <body>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
+<!-- CUSTOM CURSOR -->
+<div class="cur-wrap" id="cursorWrap">
+  <svg class="cur-svg" id="cursorSvg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <line class="cur-line" x1="20" y1="2"  x2="20" y2="12"/>
+    <line class="cur-line" x1="20" y1="28" x2="20" y2="38"/>
+    <line class="cur-line" x1="2"  y1="20" x2="12" y2="20"/>
+    <line class="cur-line" x1="28" y1="20" x2="38" y2="20"/>
+    <path class="cur-bracket" d="M8,4 L4,4 L4,8"/>
+    <path class="cur-bracket" d="M32,4 L36,4 L36,8"/>
+    <path class="cur-bracket" d="M8,36 L4,36 L4,32"/>
+    <path class="cur-bracket" d="M32,36 L36,36 L36,32"/>
+    <circle class="cur-dot" cx="20" cy="20" r="2"/>
+  </svg>
+</div>
 
 <canvas id="bgCanvas"></canvas>
 
@@ -218,12 +230,25 @@
         </a>
       </div>
 
-      <div class="project-card placeholder reveal">
-        <div class="placeholder-icon">🚧</div>
-        <div class="placeholder-text">
-          <strong style="color:var(--text); font-family:var(--font-head);">Coming Soon</strong><br>
-          <span style="font-size:0.8rem;">Next project in progress</span>
+      <div class="project-card reveal">
+        <div class="project-num">02</div>
+        <div class="project-tag">Live Project</div>
+        <h3 class="project-title">Donar — Donation App</h3>
+        <p class="project-desc">
+          A full-stack donation platform where users can sign up, log in, 
+          and contribute to causes that matter. Features secure authentication, 
+          a clean giving flow, and a community-first design built for impact.
+        </p>
+        <div class="project-chips">
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS3</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Auth Flow</span>
+          <span class="chip">Vercel</span>
         </div>
+        <a href="https://donarwebsite-c16d.vercel.app/" target="_blank" class="project-link">
+          View Live ↗
+        </a>
       </div>
 
       <div class="project-card placeholder reveal">

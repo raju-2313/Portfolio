@@ -1,21 +1,25 @@
-// CURSOR
-const cursor = document.getElementById('cursor');
-const ring = document.getElementById('cursorRing');
-let mx = 0, my = 0, rx = 0, ry = 0;
+// CURSOR — developer crosshair
+const curWrap = document.getElementById('cursorWrap');
+let cx = window.innerWidth / 2, cy = window.innerHeight / 2;
+let angle = 0;
+
 document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cursor.style.transform = `translate(${mx - 5}px, ${my - 5}px)`;
+  cx = e.clientX; cy = e.clientY;
+  curWrap.style.transform = `translate(${cx - 20}px, ${cy - 20}px)`;
 });
-function animRing() {
-  rx += (mx - rx) * 0.12;
-  ry += (my - ry) * 0.12;
-  ring.style.transform = `translate(${rx - 18}px, ${ry - 18}px)`;
-  requestAnimationFrame(animRing);
+
+// Slow continuous rotation
+function rotateCursor() {
+  angle += 0.18;
+  document.getElementById('cursorSvg').style.transform = `rotate(${angle}deg)`;
+  requestAnimationFrame(rotateCursor);
 }
-animRing();
+rotateCursor();
+
+// Hover state on interactive elements
 document.querySelectorAll('a, button, .skill-item, .service-card, .project-card').forEach(el => {
-  el.addEventListener('mouseenter', () => { ring.style.width = '60px'; ring.style.height = '60px'; ring.style.marginLeft = '-12px'; ring.style.marginTop = '-12px'; });
-  el.addEventListener('mouseleave', () => { ring.style.width = '36px'; ring.style.height = '36px'; ring.style.marginLeft = '0'; ring.style.marginTop = '0'; });
+  el.addEventListener('mouseenter', () => curWrap.classList.add('hovering'));
+  el.addEventListener('mouseleave', () => curWrap.classList.remove('hovering'));
 });
 
 // CANVAS PARTICLES
