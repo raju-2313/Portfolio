@@ -1,377 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Raju Kumbhar — Web Developer & AI Freelancer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raju Kumbhar — Web Developer</title>
+  <meta name="description" content="Web developer from Pune. I build things people actually want to use.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- CUSTOM CURSOR -->
-<div class="cur-wrap" id="cursorWrap">
-  <svg class="cur-svg" id="cursorSvg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-    <line class="cur-line" x1="20" y1="2"  x2="20" y2="12"/>
-    <line class="cur-line" x1="20" y1="28" x2="20" y2="38"/>
-    <line class="cur-line" x1="2"  y1="20" x2="12" y2="20"/>
-    <line class="cur-line" x1="28" y1="20" x2="38" y2="20"/>
-    <path class="cur-bracket" d="M8,4 L4,4 L4,8"/>
-    <path class="cur-bracket" d="M32,4 L36,4 L36,8"/>
-    <path class="cur-bracket" d="M8,36 L4,36 L4,32"/>
-    <path class="cur-bracket" d="M32,36 L36,36 L36,32"/>
-    <circle class="cur-dot" cx="20" cy="20" r="2"/>
-  </svg>
-</div>
-
-<canvas id="bgCanvas"></canvas>
-
-<!-- NAV -->
-<nav id="navbar">
-  <div class="nav-logo">RK<span>.</span></div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger">
-    <span></span><span></span><span></span>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <span class="preloader-text">RK</span>
   </div>
-</nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-inner">
-    <div class="hero-tag">Available for freelance</div>
-    <h1 class="hero-name">
-      Raju<br>
-      <span class="accent">Kumbhar</span>
-    </h1>
-    <p class="hero-role">
-      I'm a <span class="typewriter" id="typewriter"></span>
-    </p>
-    <p class="hero-desc">
-      Self-taught developer from Pune, building real-world web apps 
-      and using AI to deliver faster, smarter solutions. 
-      From smart retail systems to AI-powered tools — I ship things that work.
-    </p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-primary">View My Work</a>
-      <a href="#contact" class="btn-outline">Hire Me</a>
-    </div>
+  <header class="site-header">
+    <nav id="navbar" aria-label="Primary navigation">
+      <a href="#" class="nav-logo" aria-label="Home">RB</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#work">Selected work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Say hello</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navOverlay"
+        aria-label="Toggle navigation menu">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+    <a href="#work">Selected work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Say hello</a>
   </div>
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
 
-<div class="section-divider"></div>
+  <main>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-wrap">
-    <div class="about-grid">
-      <div class="about-avatar reveal">
-        <div class="avatar-box">
-          <div class="avatar-corner tl"></div>
-          <div class="avatar-corner br"></div>
-          <span class="avatar-initials">RK</span>
-        </div>
-        <div class="about-stats">
-          <div class="stat-card">
-            <div class="stat-num">1+</div>
-            <div class="stat-label">Year Building</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">5+</div>
-            <div class="stat-label">Projects Done</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">8</div>
-            <div class="stat-label">Skills Mastered</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">AI</div>
-            <div class="stat-label">Powered Workflow</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-text reveal">
-        <div class="section-label">About Me</div>
-        <h2 class="section-title">Developer.<br>Builder. Freelancer.</h2>
-        <p>
-          I'm Raju Kumbhar, a self-taught web developer from Pune, India. 
-          I started from zero — learning HTML, then CSS, then JavaScript, 
-          and kept going until I could build full working products on my own.
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-headline">I make the internet feel less ordinary.</h1>
+        <p class="hero-sub">Raju Basavaraj &mdash; web developer from Sangli ,building things people actually want to use.
         </p>
-        <p>
-          My edge is how I work — I use AI tools like Claude and ChatGPT 
-          not as shortcuts, but as multipliers. They help me move faster, 
-          think wider, and deliver better results for every client.
-        </p>
-        <p>
-          My latest project, Smart Trolley, is a live self-checkout retail 
-          web app — proof that I don't just learn, I ship.
-        </p>
-        <div class="about-links">
-          <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank" class="icon-btn">
-            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/raju-2313" target="_blank" class="icon-btn">
-            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-            GitHub
-          </a>
-          <a href="https://smarttrolley41.netlify.app/" target="_blank" class="icon-btn">
-            🛒 Smart Trolley
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-wrap">
-    <div class="section-label reveal">Skills</div>
-    <h2 class="section-title reveal">What I Work With</h2>
-    <p class="section-sub reveal">Technologies I use daily — each one battle-tested through real projects.</p>
-    <div class="skills-grid">
-      <div class="skill-item reveal" data-delay="0">
-        <div class="skill-icon">🌐</div>
-        <div class="skill-name">HTML5</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
-        <div class="skill-pct">92%</div>
-      </div>
-      <div class="skill-item reveal" data-delay="50">
-        <div class="skill-icon">🎨</div>
-        <div class="skill-name">CSS3</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
-        <div class="skill-pct">88%</div>
-      </div>
-      <div class="skill-item reveal" data-delay="100">
-        <div class="skill-icon">⚡</div>
-        <div class="skill-name">JavaScript</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-        <div class="skill-pct">80%</div>
-      </div>
-      <div class="skill-item reveal" data-delay="150">
-        <div class="skill-icon">🐍</div>
-        <div class="skill-name">Python</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
-        <div class="skill-pct">72%</div>
-      </div>
-      <!-- <div class="skill-item reveal" data-delay="200">
-        <div class="skill-icon">🟩</div>
-        <div class="skill-name">Node.js</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
-        <div class="skill-pct">68%</div>
-      </div> -->
-      <div class="skill-item reveal" data-delay="250">
-        <div class="skill-icon">🔗</div>
-        <div class="skill-name">APIs</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
-        <div class="skill-pct">82%</div>
-      </div>
-      <!-- <div class="skill-item reveal" data-delay="300">
-        <div class="skill-icon">⚛️</div>
-        <div class="skill-name">React Basics</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
-        <div class="skill-pct">55%</div> -->
-      </div>
-      <div class="skill-item reveal" data-delay="350">
-        <div class="skill-icon">🤖</div>
-        <div class="skill-name">AI Tools</div>
-        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
-        <div class="skill-pct">90%</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-wrap">
-    <div class="section-label reveal">Projects</div>
-    <h2 class="section-title reveal">Things I've Built</h2>
-    <p class="section-sub reveal">Real products, live on the internet — not just exercises.</p>
-    <div class="projects-grid">
-
-      <div class="project-card featured reveal">
-        <div class="project-num">01</div>
-        <div class="project-tag">Live Project</div>
-        <h3 class="project-title">Smart Trolley</h3>
-        <p class="project-desc">
-          A self-checkout retail web app that eliminates billing queues. 
-          Customers scan products into their trolley, track real-time totals, 
-          and pay via QR code or counter — all from a tablet mounted on the cart.
-        </p>
-        <div class="project-chips">
-          <span class="chip">HTML5</span>
-          <span class="chip">CSS3</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">Barcode Scan</span>
-          <span class="chip">QR Payment</span>
-          <span class="chip">Netlify</span>
-        </div>
-        <a href="https://smarttrolley05.netlify.app/" target="_blank" class="project-link">
-          View Live ↗
+        <a href="#work" class="hero-scroll-cue" aria-label="Scroll to selected work">
+          <span>Scroll to explore</span>
+          <span class="scroll-line" aria-hidden="true"></span>
         </a>
       </div>
+      <div class="hero-art" aria-hidden="true">
+        <canvas id="hero-canvas"></canvas>
+      </div>
+    </section>
 
-      <div class="project-card reveal">
-        <div class="project-num">02</div>
-        <div class="project-tag">Live Project</div>
-        <h3 class="project-title">Donar — Donation App</h3>
-        <p class="project-desc">
-          A full-stack donation platform where users can sign up, log in, 
-          and contribute to causes that matter. Features secure authentication, 
-          a clean giving flow, and a community-first design built for impact.
-        </p>
-        <div class="project-chips">
-          <span class="chip">HTML5</span>
-          <span class="chip">CSS3</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">Auth Flow</span>
-          <span class="chip">Vercel</span>
-        </div>
-        <a href="https://donarwebsite-c16d.vercel.app/" target="_blank" class="project-link">
-          View Live ↗
-        </a>
-      </div>
-
-      <div class="project-card placeholder reveal">
-        <div class="placeholder-icon">💡</div>
-        <div class="placeholder-text">
-          <strong style="color:var(--text); font-family:var(--font-head);">In The Works</strong><br>
-          <span style="font-size:0.8rem;">Something AI-powered</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="section-divider"></div>
-
-<!-- SERVICES -->
-<section id="services">
-  <div class="section-wrap">
-    <div class="section-label reveal">Services</div>
-    <h2 class="section-title reveal">What I Can Do For You</h2>
-    <p class="section-sub reveal">From full web apps to AI-powered content — here's how I help clients.</p>
-    <div class="services-grid">
-      <div class="service-card reveal">
-        <div class="service-icon">🌐</div>
-        <div class="service-title">AI-Powered Web Development</div>
-        <div class="service-desc">Full websites and web apps built faster using AI, without cutting corners on quality.</div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">💼</div>
-        <div class="service-title">Freelance Projects</div>
-        <div class="service-desc">End-to-end project delivery — from idea to a live, working product you can use.</div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">✍️</div>
-        <div class="service-title">Resume & Content Writing</div>
-        <div class="service-desc">AI-assisted resume reviews, LinkedIn bios, and written content that actually gets read.</div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">🤖</div>
-        <div class="service-title">Chatbot Building</div>
-        <div class="service-desc">Custom chatbots for websites and businesses using modern AI APIs.</div>
-      </div>
-      <div class="service-card reveal">
-        <div class="service-icon">🔗</div>
-        <div class="service-title">API Integrations</div>
-        <div class="service-desc">Connect your app to third-party services, payment gateways, or AI models.</div>
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Web Developer</span><span class="marquee-dot"></span>
+        <span>Product Thinker</span><span class="marquee-dot"></span>
+        <span>Sangli,Maharashtra,India</span><span class="marquee-dot"></span>
+        <span>Available for Freelance</span><span class="marquee-dot"></span>
+        <span>Web Developer</span><span class="marquee-dot"></span>
+        <span>Product Thinker</span><span class="marquee-dot"></span>
+        <span>Sangli,Maharashtra,India</span><span class="marquee-dot"></span>
+        <span>Available for Freelance</span><span class="marquee-dot"></span>
       </div>
     </div>
-  </div>
-</section>
 
-<div class="section-divider"></div>
+    <!-- Selected Work -->
+    <section id="work" class="work">
+      <h2 class="section-label">Selected work</h2>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-wrap">
-    <div class="contact-grid">
-      <div class="reveal">
-        <div class="section-label">Contact</div>
-        <h2 class="section-title">Let's Work<br>Together</h2>
-        <p>Have a project in mind or want to hire me for freelance work? Drop a message and I'll get back to you within 24 hours.</p>
-        <div class="contact-detail">
-          <div class="contact-dot"></div>
-          <div><strong>Location</strong> — Pune, Maharashtra, India</div>
+      <article class="project project--trolley">
+        <div class="project-body">
+          <span class="project-number" aria-hidden="true">01</span>
+          <h3 class="project-title">Smart Trolley</h3>
+          <p class="project-desc">Self-checkout, rethought. A web app that runs on tablets mounted to shopping carts.
+            Customers scan products, watch totals update live, and pay by QR &mdash; no cashier, no queue.</p>
+          <ul class="project-tech" aria-label="Technologies used">
+            <li>JavaScript</li>
+            <li>Barcode API</li>
+            <li>QR Payments</li>
+          </ul>
+          <a href="https://smarttrolley05.netlify.app/" target="_blank" rel="noopener noreferrer"
+            class="project-link">View live project <span aria-hidden="true">&#8599;</span></a>
         </div>
-        <div class="contact-detail">
-          <div class="contact-dot"></div>
-          <div><strong>Status</strong> — Available for projects</div>
+        <div class="project-visual" aria-hidden="true">
+          <div class="browser">
+            <div class="browser-chrome">
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+              <div class="chrome-url">smarttrolley05.netlify.app</div>
+            </div>
+            <div class="browser-page browser-page--trolley">
+              <div class="st-carousel">
+                <img src="images/smarttrolley/1.png" alt="" class="st-slide st-slide--1">
+                <img src="images/smarttrolley/2.png" alt="" class="st-slide st-slide--2">
+                <img src="images/smarttrolley/3.png" alt="" class="st-slide st-slide--3">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-detail">
-          <div class="contact-dot"></div>
-          <div><strong>Platforms</strong> — Fiverr, Upwork, LinkedIn</div>
+      </article>
+
+      <article class="project project--donar">
+        <div class="project-visual" aria-hidden="true">
+          <div class="browser">
+            <div class="browser-chrome">
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+              <div class="chrome-url">donarwebsite-c16d.vercel.app</div>
+            </div>
+            <div class="browser-page browser-page--donar">
+              <img src="images/donor/1.png" alt="Donar project screenshot">
+            </div>
+          </div>
         </div>
+        <div class="project-body">
+          <span class="project-number" aria-hidden="true">02</span>
+          <h3 class="project-title">Donar</h3>
+          <p class="project-desc">A patented donation platform built by
+            <a href="https://www.linkedin.com/in/swaliya-mujawar-218519389/" target="_blank"
+              rel="noopener noreferrer" class="inline-link">Swaliya Mujawar</a>.
+            I helped debug and fix issues during one phase of development and cleaning up auth flow bugs
+            and getting the frontend production-ready.</p>
+          <ul class="project-tech" aria-label="Technologies used">
+            <li>JavaScript</li>
+            <li>Bug Fixes</li>
+            <li>Vercel</li>
+          </ul>
+          <a href="https://donarwebsite-c16d.vercel.app/" target="_blank" rel="noopener noreferrer"
+            class="project-link">View live project <span aria-hidden="true">&#8599;</span></a>
+        </div>
+      </article>
+
+      <article class="project project--portfolio">
+        <div class="project-body">
+          <span class="project-number" aria-hidden="true">03</span>
+          <h3 class="project-title">This Portfolio</h3>
+          <p class="project-desc">No frameworks for layout, no build tools. Every shape on this page is CSS. Smooth
+            scrolling courtesy of Lenis, animations by GSAP. Sometimes constraints make the work better.</p>
+        </div>
+        <div class="project-visual" aria-hidden="true">
+          <div class="browser">
+            <div class="browser-chrome">
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+              <span class="chrome-dot"></span>
+              <div class="chrome-url">rajubasavaraj.com</div>
+            </div>
+            <div class="browser-page browser-page--portfolio">
+              <div class="mock-nav">
+                <div class="mock-nav-logo"></div>
+                <div class="mock-nav-links">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="mock-headline-lg"></div>
+              <div class="mock-headline-sm"></div>
+              <div class="mock-shapes-row">
+                <div class="mock-shape mock-shape--lime"></div>
+                <div class="mock-shape mock-shape--sky"></div>
+                <div class="mock-shape mock-shape--coral"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Approach -->
+    <section class="approach">
+      <div class="approach-inner">
+        <h2 class="section-label">Approach</h2>
+        <div class="approach-grid">
+          <div class="approach-item">
+            <span class="approach-num" aria-hidden="true">01</span>
+            <h3>Start with the problem</h3>
+            <p>Technology is a means, not an end. Every project begins with understanding what needs to exist and why
+              &mdash; then choosing the simplest tools that get it there.</p>
+          </div>
+          <div class="approach-item">
+            <span class="approach-num" aria-hidden="true">02</span>
+            <h3>Ship early, learn fast</h3>
+            <p>A working prototype in someone's hands teaches more than a month of planning. I build incrementally, test
+              with real users, and iterate based on what actually happens.</p>
+          </div>
+          <div class="approach-item">
+            <span class="approach-num" aria-hidden="true">03</span>
+            <h3>Sweat the details</h3>
+            <p>The difference between software that works and software that feels good lives in the margins. Loading
+              states, transitions, error messages &mdash; I care about those things.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools -->
+    <div class="tools-strip" aria-label="Technologies I work with">
+      <span class="tool-name">HTML</span>
+      <span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">CSS</span>
+      <span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">JavaScript</span>
+      <span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">Python</span>
+      <span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">REST APIs</span>
+      <span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">AI Tools</span>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="about-inner">
+        <h2 class="section-label">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="about-lede">I taught myself to code in Sangli no CS degree, no bootcamp, just obsessive
+              curiosity and the kind of stubbornness that turns tutorials into shipped products.</p>
+            <p>I build web apps that solve tangible problems: retail systems that eliminate checkout queues, platforms
+              that make giving easier, tools that work on the first try. I think in systems, move fast, and care
+              disproportionately about the details most people don't notice.</p>
+          </div>
+          <div class="about-details">
+            <dl class="detail-list">
+              <dt>Location</dt>
+              <dd>Sangli,Maharashtra,India</dd>
+              <dt>Focus</dt>
+              <dd>Web development, product thinking</dd>
+              <dt>Currently</dt>
+              <dd>Available for freelance work</dd>
+            </dl>
+            <div class="about-links">
+              <a href="https://github.com/raju-2313" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <h2 class="contact-heading">Say hello</h2>
+        <p class="contact-text">Have a project, a question, or just want to talk shop?<br>I'm always interested in work
+          that does something real.</p>
+        <a href="mailto:kumbharraju784@gmail.com" class="contact-email">kumbharraju784@gmail.com</a>
         <div class="contact-social">
-          <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank" class="social-btn" title="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="https://github.com/raju-2313" target="_blank" class="social-btn" title="GitHub">
-            <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </a>
+          <a href="https://github.com/raju-2313" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
+    </section>
 
-      <form class="contact-form reveal" onsubmit="handleSubmit(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" placeholder="Your name" required>
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="your@email.com" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <label>Subject</label>
-          <input type="text" placeholder="What's this about?">
-        </div>
-        <div class="form-group">
-          <label>Message</label>
-          <textarea placeholder="Tell me about your project..."></textarea>
-        </div>
-        <button type="submit" class="form-submit">Send Message →</button>
-      </form>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-name">Raju Kumbhar</span>
+    <span class="footer-sep" aria-hidden="true">/</span>
+    <span class="footer-location">Sangli, India</span>
+    <div class="footer-links">
+      <a href="https://github.com/raju-2313" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank"
+        rel="noopener noreferrer">LinkedIn</a>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">Raju Kumbhar<span>.</span></div>
-  <div class="footer-copy">© 2025 Raju Kumbhar — Pune, India</div>
-  <div style="display:flex;gap:0.8rem;">
-    <a href="https://github.com/raju-2313" target="_blank" class="social-btn" style="width:36px;height:36px;">
-      <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-    </a>
-    <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank" class="social-btn" style="width:36px;height:36px;">
-      <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-    </a>
-  </div>
-</footer>
-
-<script src="JS.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="hero-3d.js"></script>
+  <script src="JS.js"></script>
 </body>
+
 </html>
