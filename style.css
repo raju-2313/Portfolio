@@ -526,6 +526,21 @@ img, svg {
   position: relative;
 }
 
+/* ── Sunny Thumbnails cover ── */
+
+.browser-page--sunny {
+  padding: 0;
+  background: #11110F;
+}
+
+.browser-page--sunny img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* ── Smart Trolley mockup ── */
 
 .browser-page--trolley {

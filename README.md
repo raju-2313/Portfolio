@@ -84,7 +84,7 @@ A complete portfolio redesign for Sunny Thumbnails, transforming a conventional 
 
 [View Project](https://sunny-thumbnails-portfolio.vercel.app/)
 
-The project is currently text-only because its real cover screenshot has not been supplied. Add the screenshot at `images/sunny-thumbnails/cover.png`, then uncomment the prepared project visual in `index.html`. The folder is reserved with `.gitkeep`; no placeholder or unrelated image is used.
+The project cover uses the supplied screenshot at `images/sunny-thumbnails/cover.png`, displayed in the portfolio's existing browser-frame visual.
 
 ## Tech Stack
 
