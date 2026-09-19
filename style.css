@@ -533,7 +533,8 @@ img, svg {
   background: #11110F;
 }
 
-.browser-page--sunny img {
+.browser-page--sunny img,
+.browser-page--portfolio img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -835,9 +836,8 @@ img, svg {
 /* ── Portfolio mockup ── */
 
 .browser-page--portfolio {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  padding: 0;
+  background: var(--bg);
 }
 
 .mock-nav {

@@ -72,6 +72,8 @@ It uses:
 
 The visual layout is created directly with CSS, while GSAP handles animations and Lenis provides smooth scrolling.
 
+The project preview uses the supplied homepage screenshot at `images/portfolio/cover.png` inside the existing browser frame.
+
 ### 4. Sunny Thumbnails
 
 A complete portfolio redesign for Sunny Thumbnails, transforming a conventional thumbnail gallery into a cinematic, interactive experience built around 57 thumbnails.
