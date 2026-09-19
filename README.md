@@ -72,6 +72,20 @@ It uses:
 
 The visual layout is created directly with CSS, while GSAP handles animations and Lenis provides smooth scrolling.
 
+### 4. Sunny Thumbnails
+
+A complete portfolio redesign for Sunny Thumbnails, transforming a conventional thumbnail gallery into a cinematic, interactive experience built around 57 thumbnails.
+
+**Categories:**
+- Web Design
+- UI/UX
+- Frontend
+- Portfolio Redesign
+
+[View Project](https://sunny-thumbnails-portfolio.vercel.app/)
+
+The project is currently text-only because its real cover screenshot has not been supplied. Add the screenshot at `images/sunny-thumbnails/cover.png`, then uncomment the prepared project visual in `index.html`. The folder is reserved with `.gitkeep`; no placeholder or unrelated image is used.
+
 ## Tech Stack
 
 ```text
