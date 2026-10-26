@@ -1,124 +1,45 @@
 # Raju Kumbhar | Portfolio
 
-Personal portfolio website for **Raju Kumbhar**, a web developer from Sangli, Maharashtra, India.
+Personal portfolio for Raju Kumbhar, a self-taught web developer from Sangli, Maharashtra, India.
 
-The portfolio showcases selected projects, technical skills, development approach, and contact information.
+**Live site:** https://portfoliov12.netlify.app/
 
-## Live Website
+The site tells the story behind the work: learning by building, creating useful web experiences, using AI tools with human review, and keeping a freelance project grounded in clear communication and tested outcomes.
 
-[Visit Portfolio](https://portfoliov12.netlify.app/)
+## Selected work
 
-## About
+### Smart Trolley
+A self-checkout web app designed for shopping carts, with barcode scanning, live totals and a QR-based payment flow.
 
-I am a self-taught web developer focused on building practical web applications that solve real problems.
+[View live project](https://smarttrolley05.netlify.app/)
 
-My approach is simple:
+### Donar
+A donation platform built by Swaliya Mujawar. My contribution focused on frontend debugging, authentication-flow issues and production readiness.
 
-- Start with the problem
-- Build and ship early
-- Learn from real usage
-- Pay attention to the details
+[View live project](https://donarwebsite-c16d.vercel.app/)
 
-I work primarily with **HTML, CSS, JavaScript, Python, REST APIs, and AI tools**.
+### This Portfolio
+A static HTML, CSS and JavaScript portfolio. GSAP and ScrollTrigger handle the scroll-led reveals; Lenis provides smooth scrolling when motion preferences allow.
 
-## Featured Projects
+### Sunny Thumbnails
+A portfolio redesign that turns a conventional gallery into a more cinematic, interactive experience built around 57 thumbnails.
 
-### 1. Smart Trolley
+[View project](https://sunny-thumbnails-portfolio.vercel.app/)
 
-A self-checkout web application designed for shopping carts.
+### ScopeSnap
+A shared developer/client workspace for version history, version-linked bugs, change requests, conversation and approvals.
 
-Customers can:
+[View live project](https://scope-snap22.netlify.app/)
 
-- Scan products using a barcode
-- See their cart total update in real time
-- Pay using a QR-based payment flow
-- Avoid traditional checkout queues
+## Design and interaction
 
-**Technologies:**
-- JavaScript
-- Barcode API
-- QR Payments
+- Plain HTML, CSS and JavaScript; no build step.
+- Syne and DM Sans typography with a warm paper, forest-green and lime palette.
+- GSAP and ScrollTrigger for restrained scroll-led storytelling.
+- Lenis for smooth scrolling, with native-scroll fallback.
+- Reduced-motion support and responsive layouts.
+- AI is described as an assistive development tool; the page emphasises review, testing and responsibility for shipped work.
 
-[View Live Project](https://smarttrolley05.netlify.app/)
+## Tools and technologies
 
-### 2. Donar
-
-A donation platform developed by Swaliya Mujawar.
-
-My contribution focused on:
-
-- Debugging frontend issues
-- Fixing authentication-flow bugs
-- Improving the frontend
-- Helping prepare the application for production
-
-**Technologies:**
-- JavaScript
-- Vercel
-
-[View Live Project](https://donarwebsite-c16d.vercel.app/)
-
-### 3. This Portfolio
-
-The portfolio itself is built without a frontend framework or build tool.
-
-It uses:
-
-- HTML
-- CSS
-- JavaScript
-- GSAP
-- Lenis
-
-The visual layout is created directly with CSS, while GSAP handles animations and Lenis provides smooth scrolling.
-
-The project preview uses the supplied homepage screenshot at `images/portfolio/cover.png` inside the existing browser frame.
-
-### 4. Sunny Thumbnails
-
-A complete portfolio redesign for Sunny Thumbnails, transforming a conventional thumbnail gallery into a cinematic, interactive experience built around 57 thumbnails.
-
-**Categories:**
-- Web Design
-- UI/UX
-- Frontend
-- Portfolio Redesign
-
-[View Project](https://sunny-thumbnails-portfolio.vercel.app/)
-
-The project cover uses the supplied screenshot at `images/sunny-thumbnails/cover.png`, displayed in the portfolio's existing browser-frame visual.
-
-### 5. ScopeSnap
-
-A hosted project workspace that gives developers and clients a shared place to manage delivery.
-
-The project includes:
-- Separate developer and client portals
-- Version history and release notes
-- Bugs linked to specific versions, with severity and status tracking
-- Change requests, project conversations, and approval history
-- Project-scoped access controls with Supabase Row Level Security
-- Live updates for shared version and bug activity
-
-**Technologies:**
-- Next.js
-- TypeScript
-- Supabase / PostgreSQL
-- Tailwind CSS
-- Supabase Realtime
-
-[View Live Project](https://scope-snap22.netlify.app/) · [View Source Code](https://github.com/raju-2313/Scope-snap)
-
-The Selected Work entry uses a CSS-built interface preview inside the site's existing browser-frame design, so no extra screenshot asset is required.
-
-## Tech Stack
-
-```text
-HTML
-CSS
-JavaScript
-Python
-REST APIs
-GSAP
-Lenis
-AI Tools
+HTML · CSS · JavaScript · TypeScript · Next.js · Supabase · PostgreSQL · GSAP · ScrollTrigger · Lenis · AI-assisted workflows
