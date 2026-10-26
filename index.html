@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raju Kumbhar — Web Developer</title>
-  <meta name="description" content="Web developer from Pune. I build things people actually want to use.">
+  <meta name="theme-color" content="#F5F0EB">
+  <title>Raju Kumbhar — Independent Web Developer</title>
+  <meta name="description" content="Raju Kumbhar is a self-taught web developer from Sangli, building useful web experiences with thoughtful engineering and AI-assisted workflows.">
+  <meta property="og:title" content="Raju Kumbhar — Independent Web Developer">
+  <meta property="og:description" content="From first experiments to shipped products: a developer's work, process, and freelance journey.">
+  <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <!-- Preloader -->
   <div class="preloader" id="preloader" aria-hidden="true">
     <span class="preloader-text">RK</span>
   </div>
 
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+
   <header class="site-header">
     <nav id="navbar" aria-label="Primary navigation">
-      <a href="#" class="nav-logo" aria-label="Home">RB</a>
+      <a href="#" class="nav-logo" aria-label="Raju Kumbhar, home">RK<span class="nav-logo-dot">.</span></a>
       <ul class="nav-links" role="list">
+        <li><a href="#journey">The journey</a></li>
         <li><a href="#work">Selected work</a></li>
+        <li><a href="#ai-workflow">AI in the workflow</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Say hello</a></li>
+        <li><a href="#contact" class="nav-contact">Work with me <span aria-hidden="true">↗</span></a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navOverlay"
-        aria-label="Toggle navigation menu">
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navOverlay" aria-label="Toggle navigation menu">
         <span class="toggle-bar"></span>
         <span class="toggle-bar"></span>
       </button>
@@ -38,69 +39,207 @@
   </header>
 
   <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+    <a href="#journey">The journey</a>
     <a href="#work">Selected work</a>
+    <a href="#ai-workflow">AI in the workflow</a>
     <a href="#about">About</a>
-    <a href="#contact">Say hello</a>
+    <a href="#contact">Work with me</a>
   </div>
 
   <main>
-
-    <!-- Hero -->
     <section id="hero" class="hero">
       <div class="hero-content">
-        <h1 class="hero-headline">I make the internet feel less ordinary.</h1>
-        <p class="hero-sub">Raju Basavaraj &mdash; web developer from Sangli ,building things people actually want to use.
-        </p>
-        <a href="#work" class="hero-scroll-cue" aria-label="Scroll to selected work">
-          <span>Scroll to explore</span>
-          <span class="scroll-line" aria-hidden="true"></span>
-        </a>
+        <p class="eyebrow hero-kicker"><span class="eyebrow-line" aria-hidden="true"></span> Independent web developer · Sangli, India</p>
+        <h1 class="hero-headline">I turn ideas<br>into <span class="hero-highlight">useful things.</span></h1>
+        <p class="hero-sub">I’m Raju — a self-taught developer who learns by building, ships what works, and uses AI tools to move faster without handing over the thinking.</p>
+        <div class="hero-actions">
+          <a href="#work" class="button button-primary">Explore the work <span aria-hidden="true">↓</span></a>
+          <a href="#contact" class="text-link">Have a project in mind? <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-footnote">
+          <span class="availability-dot" aria-hidden="true"></span>
+          <span>Open to thoughtful freelance projects</span>
+        </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <canvas id="hero-canvas"></canvas>
+
+      <div class="hero-art" aria-label="A visual sketch of an idea becoming a website">
+        <div class="scene-index"><span>FIELD NOTES / 001</span><span>IDEA → BUILD → SHIP</span></div>
+        <div class="scene-orbit scene-orbit-one" aria-hidden="true"></div>
+        <div class="scene-orbit scene-orbit-two" aria-hidden="true"></div>
+        <div class="scene-card scene-note">
+          <span class="scene-card-label">THE START</span>
+          <strong>A problem<br>worth solving.</strong>
+          <span class="scene-scribble" aria-hidden="true">↘</span>
+        </div>
+        <div class="scene-browser">
+          <div class="scene-browser-bar">
+            <span class="scene-browser-dots"><i></i><i></i><i></i></span>
+            <span class="scene-browser-url">something-useful.dev</span>
+            <span class="scene-browser-menu">•••</span>
+          </div>
+          <div class="scene-browser-body">
+            <div class="scene-site-top"><b>MAKE IT REAL<span>.</span></b><span>MENU +</span></div>
+            <div class="scene-site-copy">
+              <span class="scene-site-eyebrow">A FIRST DRAFT</span>
+              <strong>Less noise.<br><em>More useful.</em></strong>
+              <span class="scene-site-line scene-site-line-long"></span>
+              <span class="scene-site-line"></span>
+              <span class="scene-site-cta">TRY THE THING <b>↗</b></span>
+            </div>
+            <div class="scene-site-shapes"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+        <div class="scene-card scene-shipped">
+          <span class="scene-shipped-mark" aria-hidden="true">↗</span>
+          <span class="scene-card-label">THE GOAL</span>
+          <strong>Something<br>people can use.</strong>
+        </div>
+        <div class="scene-caption">Not a perfect plan. A useful first version.</div>
       </div>
+
+      <a href="#journey" class="hero-scroll-cue" aria-label="Scroll to my journey">
+        <span>Start at the beginning</span><span class="scroll-line" aria-hidden="true"></span>
+      </a>
     </section>
 
-    <!-- Marquee -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>Web Developer</span><span class="marquee-dot"></span>
-        <span>Product Thinker</span><span class="marquee-dot"></span>
-        <span>Sangli,Maharashtra,India</span><span class="marquee-dot"></span>
-        <span>Available for Freelance</span><span class="marquee-dot"></span>
-        <span>Web Developer</span><span class="marquee-dot"></span>
-        <span>Product Thinker</span><span class="marquee-dot"></span>
-        <span>Sangli,Maharashtra,India</span><span class="marquee-dot"></span>
-        <span>Available for Freelance</span><span class="marquee-dot"></span>
+        <span>Build with intent</span><span class="marquee-dot"></span>
+        <span>Learn by shipping</span><span class="marquee-dot"></span>
+        <span>Use AI thoughtfully</span><span class="marquee-dot"></span>
+        <span>Care about the details</span><span class="marquee-dot"></span>
+        <span>Build with intent</span><span class="marquee-dot"></span>
+        <span>Learn by shipping</span><span class="marquee-dot"></span>
+        <span>Use AI thoughtfully</span><span class="marquee-dot"></span>
+        <span>Care about the details</span><span class="marquee-dot"></span>
       </div>
     </div>
 
-    <!-- Selected Work -->
+    <section id="journey" class="journey story-section">
+      <div class="journey-header">
+        <div>
+          <h2 class="section-label">01 / The journey</h2>
+          <h3 class="story-heading">No straight line.<br><span>Just the next thing to learn.</span></h3>
+        </div>
+        <p class="journey-intro">I didn’t begin with a perfect roadmap. I got better by making things, running into problems, and staying with them until they made sense.</p>
+      </div>
+
+      <div class="journey-timeline">
+        <article class="journey-step">
+          <div class="journey-step-marker"><span>01</span><i aria-hidden="true"></i></div>
+          <div class="journey-step-body">
+            <p class="journey-step-kicker">The beginning</p>
+            <h4>Curiosity before credentials.</h4>
+            <p>I’m self-taught. The browser became my classroom: inspect how a page works, try an idea, break something, and figure out why. Progress came from practice, not from waiting to feel ready.</p>
+          </div>
+          <span class="journey-side-note">LEARN BY DOING</span>
+        </article>
+
+        <article class="journey-step">
+          <div class="journey-step-marker"><span>02</span><i aria-hidden="true"></i></div>
+          <div class="journey-step-body">
+            <p class="journey-step-kicker">The shift</p>
+            <h4>Make a thing someone can use.</h4>
+            <p>A build changes when it leaves your laptop. A checkout flow has to make sense. A page needs to load. A login bug needs to stay fixed. The small details stop being small when another person depends on them.</p>
+          </div>
+          <span class="journey-side-note">FROM DEMO TO DELIVERY</span>
+        </article>
+
+        <article class="journey-step">
+          <div class="journey-step-marker"><span>03</span><i aria-hidden="true"></i></div>
+          <div class="journey-step-body">
+            <p class="journey-step-kicker">The practice</p>
+            <h4>Use better tools. Keep the judgment.</h4>
+            <p>AI tools can help explore options, explain unfamiliar code, and shorten repetitive work. They can also be confidently wrong. I treat the output as a draft to inspect, test, and understand before it becomes part of a product.</p>
+          </div>
+          <span class="journey-side-note">AI ASSISTS. I DECIDE.</span>
+        </article>
+
+        <article class="journey-step">
+          <div class="journey-step-marker"><span>04</span><i aria-hidden="true"></i></div>
+          <div class="journey-step-body">
+            <p class="journey-step-kicker">The direction</p>
+            <h4>Build with people, not just for a brief.</h4>
+            <p>Freelancing is more than shipping a page. It means asking clearer questions, making trade-offs visible, sharing progress, and leaving someone with software they can actually use.</p>
+          </div>
+          <span class="journey-side-note">GOOD WORK, CLEARLY SHARED</span>
+        </article>
+      </div>
+
+      <div class="journey-endnote">
+        <span class="endnote-mark" aria-hidden="true">↳</span>
+        <p>The thread through all of it: <strong>understand the problem, make a working version, test it, then improve what matters.</strong></p>
+      </div>
+    </section>
+
+    <section id="ai-workflow" class="ai-workflow">
+      <div class="ai-workflow-inner">
+        <div class="ai-workflow-heading">
+          <div>
+            <h2 class="section-label">02 / AI in the workflow</h2>
+            <h3 class="story-heading">Move faster.<br><span>Don’t switch off your brain.</span></h3>
+          </div>
+          <p>I use AI as a practical tool in the development process—not as a substitute for understanding the product or checking the result.</p>
+        </div>
+
+        <div class="workflow-layout">
+          <div class="workflow-steps">
+            <article class="workflow-step">
+              <span class="workflow-number">A / 01</span>
+              <div><h4>Explore the options</h4><p>Compare approaches, map unfamiliar concepts, and turn a vague question into a testable plan.</p></div>
+            </article>
+            <article class="workflow-step">
+              <span class="workflow-number">A / 02</span>
+              <div><h4>Get to a first draft</h4><p>Use AI to help with scaffolding, repetitive code, edge-case lists, or an explanation when stuck.</p></div>
+            </article>
+            <article class="workflow-step">
+              <span class="workflow-number">A / 03</span>
+              <div><h4>Check the actual behaviour</h4><p>Read the code, challenge assumptions, test real flows, and fix the parts that do not hold up.</p></div>
+            </article>
+            <article class="workflow-step">
+              <span class="workflow-number">A / 04</span>
+              <div><h4>Own what ships</h4><p>The finished work needs to be understandable, maintainable, and useful—not merely generated.</p></div>
+            </article>
+          </div>
+
+          <aside class="workflow-panel">
+            <div class="workflow-panel-top"><span>WORKING NOTES</span><span class="workflow-panel-status"><i></i> HUMAN REVIEW</span></div>
+            <div class="workflow-panel-title">A good loop beats a magic prompt.</div>
+            <div class="workflow-loop" aria-label="Understand, draft, test, refine">
+              <div class="workflow-loop-step"><span>01</span><strong>Understand</strong><small>Define the real problem</small></div>
+              <div class="workflow-loop-arrow" aria-hidden="true">↓</div>
+              <div class="workflow-loop-step workflow-loop-step-ai"><span>02</span><strong>Draft with tools</strong><small>Explore a possible answer</small></div>
+              <div class="workflow-loop-arrow" aria-hidden="true">↓</div>
+              <div class="workflow-loop-step"><span>03</span><strong>Test &amp; inspect</strong><small>Check the result</small></div>
+              <div class="workflow-loop-arrow" aria-hidden="true">↺</div>
+              <div class="workflow-loop-step"><span>04</span><strong>Refine &amp; ship</strong><small>Keep only what works</small></div>
+            </div>
+            <p class="workflow-panel-footnote">AI can speed up a step. It cannot take responsibility for the outcome.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <section id="work" class="work">
-      <h2 class="section-label">Selected work</h2>
+      <div class="work-heading">
+        <div>
+          <h2 class="section-label">03 / Selected work</h2>
+          <h3 class="story-heading">Things I’ve made.<br><span>Things I’ve helped improve.</span></h3>
+        </div>
+        <p>Different problems, different constraints. The common thread is making the result work for the person using it.</p>
+      </div>
 
       <article class="project project--trolley">
         <div class="project-body">
-          <span class="project-number" aria-hidden="true">01</span>
+          <span class="project-number" aria-hidden="true">01 / PRODUCT BUILD</span>
           <h3 class="project-title">Smart Trolley</h3>
-          <p class="project-desc">Self-checkout, rethought. A web app that runs on tablets mounted to shopping carts.
-            Customers scan products, watch totals update live, and pay by QR &mdash; no cashier, no queue.</p>
-          <ul class="project-tech" aria-label="Technologies used">
-            <li>JavaScript</li>
-            <li>Barcode API</li>
-            <li>QR Payments</li>
-          </ul>
-          <a href="https://smarttrolley05.netlify.app/" target="_blank" rel="noopener noreferrer"
-            class="project-link">View live project <span aria-hidden="true">&#8599;</span></a>
+          <p class="project-desc">Self-checkout, rethought. A web app designed for tablets mounted to shopping carts. Customers scan products, watch totals update, and use a QR-based payment flow instead of joining a traditional checkout queue.</p>
+          <ul class="project-tech" aria-label="Technologies used"><li>JavaScript</li><li>Barcode API</li><li>QR Payments</li></ul>
+          <a href="https://smarttrolley05.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">View live project <span aria-hidden="true">↗</span></a>
         </div>
         <div class="project-visual" aria-hidden="true">
           <div class="browser">
-            <div class="browser-chrome">
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <div class="chrome-url">smarttrolley05.netlify.app</div>
-            </div>
+            <div class="browser-chrome"><span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span><div class="chrome-url">smarttrolley05.netlify.app</div></div>
             <div class="browser-page browser-page--trolley">
               <div class="st-carousel">
                 <img src="images/smarttrolley/1.png" alt="" class="st-slide st-slide--1">
@@ -115,149 +254,69 @@
       <article class="project project--donar">
         <div class="project-visual" aria-hidden="true">
           <div class="browser">
-            <div class="browser-chrome">
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <div class="chrome-url">donarwebsite-c16d.vercel.app</div>
-            </div>
-            <div class="browser-page browser-page--donar">
-              <img src="images/donor/1.png" alt="Donar project screenshot">
-            </div>
+            <div class="browser-chrome"><span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span><div class="chrome-url">donarwebsite-c16d.vercel.app</div></div>
+            <div class="browser-page browser-page--donar"><img src="images/donor/1.png" alt=""></div>
           </div>
         </div>
         <div class="project-body">
-          <span class="project-number" aria-hidden="true">02</span>
+          <span class="project-number" aria-hidden="true">02 / CONTRIBUTION</span>
           <h3 class="project-title">Donar</h3>
-          <p class="project-desc">A patented donation platform built by
-            <a href="https://www.linkedin.com/in/swaliya-mujawar-218519389/" target="_blank"
-              rel="noopener noreferrer" class="inline-link">Swaliya Mujawar</a>.
-            I helped debug and fix issues during one phase of development and cleaning up auth flow bugs
-            and getting the frontend production-ready.</p>
-          <ul class="project-tech" aria-label="Technologies used">
-            <li>JavaScript</li>
-            <li>Bug Fixes</li>
-            <li>Vercel</li>
-          </ul>
-          <a href="https://donarwebsite-c16d.vercel.app/" target="_blank" rel="noopener noreferrer"
-            class="project-link">View live project <span aria-hidden="true">&#8599;</span></a>
+          <p class="project-desc">A donation platform built by <a href="https://www.linkedin.com/in/swaliya-mujawar-218519389/" target="_blank" rel="noopener noreferrer" class="inline-link">Swaliya Mujawar</a>. I contributed during one phase by debugging frontend issues, working through authentication-flow bugs, and helping prepare the interface for production.</p>
+          <ul class="project-tech" aria-label="Technologies used"><li>JavaScript</li><li>Debugging</li><li>Vercel</li></ul>
+          <a href="https://donarwebsite-c16d.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">View live project <span aria-hidden="true">↗</span></a>
         </div>
       </article>
 
       <article class="project project--portfolio">
         <div class="project-body">
-          <span class="project-number" aria-hidden="true">03</span>
+          <span class="project-number" aria-hidden="true">03 / THIS SITE</span>
           <h3 class="project-title">This Portfolio</h3>
-          <p class="project-desc">No frameworks for layout, no build tools. Every shape on this page is CSS. Smooth
-            scrolling courtesy of Lenis, animations by GSAP. Sometimes constraints make the work better.</p>
+          <p class="project-desc">A portfolio built with plain HTML, CSS, and JavaScript. GSAP handles the motion; Lenis gives the page its smooth scroll. The goal is simple: make the work feel considered without making the page harder to use.</p>
+          <ul class="project-tech" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>GSAP</li><li>Lenis</li></ul>
         </div>
         <div class="project-visual" aria-hidden="true">
           <div class="browser">
-            <div class="browser-chrome">
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <div class="chrome-url">rajubasavaraj.com</div>
-            </div>
-            <div class="browser-page browser-page--portfolio">
-              <img src="images/portfolio/cover.png" alt="This Portfolio homepage screenshot"
-                width="1906" height="974" loading="lazy">
-            </div>
+            <div class="browser-chrome"><span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span><div class="chrome-url">rajubasavaraj.com</div></div>
+            <div class="browser-page browser-page--portfolio"><img src="images/portfolio/cover.png" alt="" width="1906" height="974" loading="lazy"></div>
           </div>
         </div>
       </article>
 
       <article class="project project--sunny">
         <div class="project-body">
-          <span class="project-number" aria-hidden="true">04</span>
+          <span class="project-number" aria-hidden="true">04 / EXPERIENCE DESIGN</span>
           <h3 class="project-title">Sunny Thumbnails</h3>
-          <p class="project-desc">A complete portfolio redesign for Sunny Thumbnails, transforming a conventional
-            thumbnail gallery into a cinematic, interactive experience built around 57 thumbnails.</p>
-          <ul class="project-tech" aria-label="Project categories">
-            <li>Web Design</li>
-            <li>UI/UX</li>
-            <li>Frontend</li>
-            <li>Portfolio Redesign</li>
-          </ul>
-          <a href="https://sunny-thumbnails-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer"
-            class="project-link">View Project <span aria-hidden="true">&#8599;</span></a>
+          <p class="project-desc">A portfolio redesign for Sunny Thumbnails, turning a conventional gallery into a cinematic, interactive experience built around 57 thumbnails.</p>
+          <ul class="project-tech" aria-label="Project categories"><li>Web Design</li><li>UI/UX</li><li>Frontend</li><li>Portfolio Redesign</li></ul>
+          <a href="https://sunny-thumbnails-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">View project <span aria-hidden="true">↗</span></a>
         </div>
         <div class="project-visual" aria-hidden="true">
           <div class="browser">
-            <div class="browser-chrome">
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <div class="chrome-url">sunny-thumbnails-portfolio.vercel.app</div>
-            </div>
-            <div class="browser-page browser-page--sunny">
-              <img src="images/sunny-thumbnails/cover.png" alt="Sunny Thumbnails portfolio redesign screenshot"
-                width="1906" height="965" loading="lazy">
-            </div>
+            <div class="browser-chrome"><span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span><div class="chrome-url">sunny-thumbnails-portfolio.vercel.app</div></div>
+            <div class="browser-page browser-page--sunny"><img src="images/sunny-thumbnails/cover.png" alt="" width="1906" height="965" loading="lazy"></div>
           </div>
         </div>
       </article>
 
       <article class="project project--scopesnap">
         <div class="project-body">
-          <span class="project-number" aria-hidden="true">05</span>
+          <span class="project-number" aria-hidden="true">05 / SAAS PRODUCT</span>
           <h3 class="project-title">ScopeSnap</h3>
-          <p class="project-desc">A shared project workspace for developers and clients. Track releases, version-linked bugs,
-            change requests, conversations and approvals in one place. Role-scoped access and live updates keep both sides
-            working from the same project record.</p>
-          <ul class="project-tech" aria-label="Technologies used">
-            <li>Next.js</li>
-            <li>TypeScript</li>
-            <li>Supabase</li>
-            <li>PostgreSQL</li>
-            <li>Realtime</li>
-          </ul>
-          <a href="https://scope-snap22.netlify.app/" target="_blank" rel="noopener noreferrer"
-            class="project-link">View live project <span aria-hidden="true">&#8599;</span></a>
-          <a href="https://github.com/raju-2313/Scope-snap" target="_blank" rel="noopener noreferrer"
-            class="project-link">View source <span aria-hidden="true">&#8599;</span></a>
+          <p class="project-desc">A shared workspace for developers and clients. Version history, bugs linked to releases, change requests, conversations, and approvals live in one project record—so both sides can see what changed and what needs attention.</p>
+          <ul class="project-tech" aria-label="Technologies used"><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>PostgreSQL</li><li>Realtime</li></ul>
+          <a href="https://scope-snap22.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">View live project <span aria-hidden="true">↗</span></a>
         </div>
         <div class="project-visual" aria-hidden="true">
           <div class="browser">
-            <div class="browser-chrome">
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <span class="chrome-dot"></span>
-              <div class="chrome-url">scope-snap22.netlify.app</div>
-            </div>
+            <div class="browser-chrome"><span class="chrome-dot"></span><span class="chrome-dot"></span><span class="chrome-dot"></span><div class="chrome-url">scope-snap22.netlify.app</div></div>
             <div class="browser-page browser-page--scopesnap">
-              <div class="ss-topbar">
-                <div class="ss-brand"><span class="ss-mark">SS</span><span>ScopeSnap<span class="ss-period">.</span></span></div>
-                <span class="ss-top-pill">PROJECT FOLIO</span>
-              </div>
+              <div class="ss-topbar"><div class="ss-brand"><span class="ss-mark">SS</span><span>ScopeSnap<span class="ss-period">.</span></span></div><span class="ss-top-pill">PROJECT FOLIO</span></div>
               <div class="ss-workspace">
-                <aside class="ss-sidebar">
-                  <span class="ss-side-heading">WORKSPACE</span>
-                  <span class="ss-side-item ss-side-item--active">Overview</span>
-                  <span class="ss-side-item">Versions</span>
-                  <span class="ss-side-item">Bugs</span>
-                  <span class="ss-side-item">Requests</span>
-                  <span class="ss-side-item">Approvals</span>
-                </aside>
+                <aside class="ss-sidebar"><span class="ss-side-heading">WORKSPACE</span><span class="ss-side-item ss-side-item--active">Overview</span><span class="ss-side-item">Versions</span><span class="ss-side-item">Bugs</span><span class="ss-side-item">Requests</span><span class="ss-side-item">Approvals</span></aside>
                 <div class="ss-main">
-                  <div class="ss-main-heading">
-                    <div><span class="ss-eyebrow">PROJECT / HEALTH</span><strong>Storefront rebuild</strong></div>
-                    <span class="ss-status">In progress</span>
-                  </div>
-                  <div class="ss-stat-row">
-                    <div class="ss-stat"><span>OPEN BUGS</span><strong>Bug ledger</strong><i class="ss-line ss-line--red"></i></div>
-                    <div class="ss-stat"><span>RELEASES</span><strong>Version history</strong><i class="ss-line ss-line--green"></i></div>
-                    <div class="ss-stat"><span>ACTIVITY</span><strong>Live sync</strong><i class="ss-live-dot"></i></div>
-                  </div>
-                  <div class="ss-release-card">
-                    <div class="ss-card-heading"><strong>Bug load by version</strong><span>ISSUE TRACKER</span></div>
-                    <div class="ss-chart">
-                      <div class="ss-chart-col"><div class="ss-chart-stack"><i class="ss-chart-open ss-chart-open--one"></i><i class="ss-chart-fixed ss-chart-fixed--one"></i></div><span>v1.0</span></div>
-                      <div class="ss-chart-col"><div class="ss-chart-stack"><i class="ss-chart-open ss-chart-open--two"></i><i class="ss-chart-fixed ss-chart-fixed--two"></i></div><span>v1.1</span></div>
-                      <div class="ss-chart-col"><div class="ss-chart-stack"><i class="ss-chart-open ss-chart-open--three"></i><i class="ss-chart-fixed ss-chart-fixed--three"></i></div><span>v1.2</span></div>
-                      <div class="ss-chart-legend"><i class="ss-legend-open"></i> Open <i class="ss-legend-fixed"></i> Fixed</div>
-                    </div>
-                  </div>
+                  <div class="ss-main-heading"><div><span class="ss-eyebrow">PROJECT / HEALTH</span><strong>Storefront rebuild</strong></div><span class="ss-status">In progress</span></div>
+                  <div class="ss-stat-row"><div class="ss-stat"><span>OPEN BUGS</span><strong>Bug ledger</strong><i class="ss-line ss-line--red"></i></div><div class="ss-stat"><span>RELEASES</span><strong>Version history</strong><i class="ss-line ss-line--green"></i></div><div class="ss-stat"><span>ACTIVITY</span><strong>Live sync</strong><i class="ss-live-dot"></i></div></div>
+                  <div class="ss-release-card"><div class="ss-card-heading"><strong>Bug load by version</strong><span>ISSUE TRACKER</span></div><div class="ss-chart"><div class="ss-chart-col"><div class="ss-chart-stack"><i class="ss-chart-open ss-chart-open--one"></i><i class="ss-chart-fixed ss-chart-fixed--one"></i></div><span>v1.0</span></div><div class="ss-chart-col"><div class="ss-chart-stack"><i class="ss-chart-open ss-chart-open--two"></i><i class="ss-chart-fixed ss-chart-fixed--two"></i></div><span>v1.1</span></div><div class="ss-chart-col"><div class="ss-chart-stack"><i class="ss-chart-open ss-chart-open--three"></i><i class="ss-chart-fixed ss-chart-fixed--three"></i></div><span>v1.2</span></div><div class="ss-chart-legend"><i class="ss-legend-open"></i> Open <i class="ss-legend-fixed"></i> Fixed</div></div></div>
                   <div class="ss-issue-row"><span class="ss-issue-mark"></span><div><strong>Bug reports</strong><small>Shared with client and developer</small></div><span class="ss-issue-tag">TRACKED</span></div>
                 </div>
               </div>
@@ -267,114 +326,89 @@
       </article>
     </section>
 
-    <!-- Approach -->
     <section class="approach">
       <div class="approach-inner">
-        <h2 class="section-label">Approach</h2>
+        <h2 class="section-label">04 / How I work</h2>
         <div class="approach-grid">
-          <div class="approach-item">
+          <article class="approach-item">
             <span class="approach-num" aria-hidden="true">01</span>
             <h3>Start with the problem</h3>
-            <p>Technology is a means, not an end. Every project begins with understanding what needs to exist and why
-              &mdash; then choosing the simplest tools that get it there.</p>
-          </div>
-          <div class="approach-item">
+            <p>Before picking a stack, I want to know who the site is for, what they need to do, and what success should look like.</p>
+          </article>
+          <article class="approach-item">
             <span class="approach-num" aria-hidden="true">02</span>
-            <h3>Ship early, learn fast</h3>
-            <p>A working prototype in someone's hands teaches more than a month of planning. I build incrementally, test
-              with real users, and iterate based on what actually happens.</p>
-          </div>
-          <div class="approach-item">
+            <h3>Make progress visible</h3>
+            <p>Small milestones, working previews, and honest updates beat a big reveal at the end. Feedback is part of the build, not a final ceremony.</p>
+          </article>
+          <article class="approach-item">
             <span class="approach-num" aria-hidden="true">03</span>
-            <h3>Sweat the details</h3>
-            <p>The difference between software that works and software that feels good lives in the margins. Loading
-              states, transitions, error messages &mdash; I care about those things.</p>
-          </div>
+            <h3>Ship, then stay curious</h3>
+            <p>Test the important paths, pay attention to the rough edges, and improve the parts that make a real difference to the person using it.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Tools -->
-    <div class="tools-strip" aria-label="Technologies I work with">
-      <span class="tool-name">HTML</span>
-      <span class="tool-sep" aria-hidden="true">/</span>
-      <span class="tool-name">CSS</span>
-      <span class="tool-sep" aria-hidden="true">/</span>
-      <span class="tool-name">JavaScript</span>
-      <span class="tool-sep" aria-hidden="true">/</span>
-      <span class="tool-name">Python</span>
-      <span class="tool-sep" aria-hidden="true">/</span>
-      <span class="tool-name">REST APIs</span>
-      <span class="tool-sep" aria-hidden="true">/</span>
-      <span class="tool-name">AI Tools</span>
+    <div class="tools-strip" aria-label="Technologies and tools I work with">
+      <span class="tool-name">HTML / CSS</span><span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">JavaScript</span><span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">TypeScript</span><span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">Next.js</span><span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">Supabase</span><span class="tool-sep" aria-hidden="true">/</span>
+      <span class="tool-name">AI-assisted workflow</span>
     </div>
 
-    <!-- About -->
     <section id="about" class="about">
       <div class="about-inner">
-        <h2 class="section-label">About</h2>
+        <h2 class="section-label">05 / A little about me</h2>
         <div class="about-grid">
           <div class="about-text">
-            <p class="about-lede">I taught myself to code in Sangli no CS degree, no bootcamp, just obsessive
-              curiosity and the kind of stubbornness that turns tutorials into shipped products.</p>
-            <p>I build web apps that solve tangible problems: retail systems that eliminate checkout queues, platforms
-              that make giving easier, tools that work on the first try. I think in systems, move fast, and care
-              disproportionately about the details most people don't notice.</p>
+            <p class="about-lede">I’m Raju Kumbhar, a self-taught web developer from Sangli. I like the point where a practical problem, a considered interface, and working code meet.</p>
+            <p>I’m interested in projects that do something tangible: make a task simpler, make information clearer, or help a small idea become a usable product. I’m comfortable learning as I go, using AI tools where they help, and owning the result rather than just the first draft.</p>
           </div>
           <div class="about-details">
             <dl class="detail-list">
-              <dt>Location</dt>
-              <dd>Sangli,Maharashtra,India</dd>
-              <dt>Focus</dt>
-              <dd>Web development, product thinking</dd>
-              <dt>Currently</dt>
-              <dd>Available for freelance work</dd>
+              <dt>Based in</dt><dd>Sangli, Maharashtra, India</dd>
+              <dt>Focus</dt><dd>Web development · Product thinking</dd>
+              <dt>Workflow</dt><dd>Build · Test · Improve</dd>
+              <dt>Availability</dt><dd>Open to freelance work</dd>
             </dl>
             <div class="about-links">
               <a href="https://github.com/raju-2313" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank"
-                rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="contact">
       <div class="contact-inner">
-        <h2 class="contact-heading">Say hello</h2>
-        <p class="contact-text">Have a project, a question, or just want to talk shop?<br>I'm always interested in work
-          that does something real.</p>
-        <a href="mailto:kumbharraju784@gmail.com" class="contact-email">kumbharraju784@gmail.com</a>
+        <p class="eyebrow contact-kicker"><span class="eyebrow-line" aria-hidden="true"></span> The next chapter could be yours</p>
+        <h2 class="contact-heading">Have a real<br>problem to solve<span class="contact-period">?</span></h2>
+        <p class="contact-text">Tell me what you’re trying to make better. We can start with the problem, figure out a sensible first step, and see if we’re a good fit to build it.</p>
+        <a href="mailto:kumbharraju784@gmail.com" class="contact-email">kumbharraju784@gmail.com <span aria-hidden="true">↗</span></a>
         <div class="contact-social">
           <a href="https://github.com/raju-2313" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank"
-            rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
-    <span class="footer-name">Raju Kumbhar</span>
-    <span class="footer-sep" aria-hidden="true">/</span>
+    <span class="footer-name">Raju Kumbhar</span><span class="footer-sep" aria-hidden="true">/</span>
     <span class="footer-location">Sangli, India</span>
+    <span class="footer-note">Made with intent. Improved with feedback.</span>
     <div class="footer-links">
       <a href="https://github.com/raju-2313" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank"
-        rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/raju-kumbhar-72049a378/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-  <script src="hero-3d.js"></script>
   <script src="JS.js"></script>
 </body>
-
 </html>
