@@ -913,6 +913,380 @@ img, svg {
 }
 
 
+/* ── ScopeSnap project preview ── */
+
+.browser-page--scopesnap {
+  padding: 0;
+  background: #F8F7F0;
+  color: #171717;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+}
+
+.ss-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 12px;
+  background: #FDE047;
+  border-bottom: 2px solid #171717;
+}
+
+.ss-brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-head);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.ss-mark {
+  width: 19px;
+  height: 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #171717;
+  background: #171717;
+  color: #4ADE80;
+  font-size: 0.52rem;
+  letter-spacing: -0.04em;
+}
+
+.ss-period {
+  color: #16A34A;
+}
+
+.ss-top-pill {
+  border: 1px solid #171717;
+  padding: 3px 6px;
+  font-size: 0.48rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+.ss-workspace {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 9px;
+  flex: 1;
+  min-height: 0;
+  padding: 10px;
+}
+
+.ss-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  padding: 8px 5px;
+  background: #FFFFFF;
+  border: 1px solid #E1DED3;
+}
+
+.ss-side-heading {
+  padding: 2px 4px 5px;
+  font-size: 0.43rem;
+  font-weight: 800;
+  color: #827F75;
+  letter-spacing: 0.08em;
+}
+
+.ss-side-item {
+  padding: 5px 4px;
+  border: 1px solid transparent;
+  font-size: 0.51rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #57574F;
+  white-space: nowrap;
+}
+
+.ss-side-item--active {
+  border-color: #171717;
+  background: #FEF08A;
+  color: #171717;
+}
+
+.ss-main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.ss-main-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.ss-main-heading > div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.ss-eyebrow {
+  color: #77766E;
+  font-size: 0.42rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+.ss-main-heading strong {
+  font-family: var(--font-head);
+  font-size: 0.78rem;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.ss-status {
+  border: 1px solid #171717;
+  background: #BBF7D0;
+  padding: 3px 5px;
+  font-size: 0.44rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ss-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.ss-stat {
+  position: relative;
+  min-width: 0;
+  min-height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 6px;
+  border: 1px solid #E1DED3;
+  background: #FFFFFF;
+}
+
+.ss-stat > span {
+  color: #77766E;
+  font-size: 0.4rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.ss-stat strong {
+  font-size: 0.52rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.ss-line {
+  display: block;
+  height: 3px;
+  width: 100%;
+  margin-top: 1px;
+}
+
+.ss-line--red { background: #F87171; }
+.ss-line--green { background: #4ADE80; }
+
+.ss-live-dot {
+  width: 6px;
+  height: 6px;
+  margin-top: 1px;
+  border-radius: 50%;
+  background: #16A34A;
+  box-shadow: 0 0 0 3px #BBF7D0;
+}
+
+.ss-release-card {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #E1DED3;
+  background: #FFFFFF;
+}
+
+.ss-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.ss-card-heading strong {
+  font-size: 0.54rem;
+  font-weight: 800;
+}
+
+.ss-card-heading span {
+  color: #77766E;
+  font-size: 0.38rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ss-chart {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 14px;
+  height: 57px;
+  padding: 3px 3px 0;
+  border-bottom: 1px solid #E1DED3;
+}
+
+.ss-chart-col {
+  height: 100%;
+  width: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+}
+
+.ss-chart-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #171717;
+}
+
+.ss-chart-stack i { display: block; width: 100%; }
+.ss-chart-open { background: #F87171; }
+.ss-chart-fixed { background: #4ADE80; }
+.ss-chart-open--one { height: 12px; }
+.ss-chart-fixed--one { height: 22px; }
+.ss-chart-open--two { height: 8px; }
+.ss-chart-fixed--two { height: 30px; }
+.ss-chart-open--three { height: 5px; }
+.ss-chart-fixed--three { height: 39px; }
+
+.ss-chart-col span {
+  color: #77766E;
+  font-size: 0.42rem;
+  font-weight: 700;
+}
+
+.ss-chart-legend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  align-self: center;
+  color: #77766E;
+  font-size: 0.43rem;
+  font-weight: 600;
+}
+
+.ss-legend-open,
+.ss-legend-fixed {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.ss-legend-open { background: #F87171; }
+.ss-legend-fixed { background: #4ADE80; }
+
+.ss-issue-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px;
+  border: 1px solid #E1DED3;
+  background: #FFFFFF;
+}
+
+.ss-issue-mark {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 auto;
+  border: 1px solid #171717;
+  background: #F87171;
+}
+
+.ss-issue-row > div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ss-issue-row strong {
+  font-size: 0.52rem;
+  line-height: 1.1;
+}
+
+.ss-issue-row small {
+  color: #77766E;
+  font-size: 0.43rem;
+  line-height: 1.2;
+}
+
+.ss-issue-tag {
+  margin-left: auto;
+  padding: 3px 4px;
+  border: 1px solid #171717;
+  background: #FEF08A;
+  font-size: 0.4rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.project-link + .project-link {
+  margin-left: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .ss-workspace {
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 6px;
+    padding: 7px;
+  }
+
+  .ss-main {
+    gap: 6px;
+  }
+
+  .ss-sidebar {
+    padding: 6px 3px;
+  }
+
+  .ss-side-item {
+    font-size: 0.45rem;
+    padding: 5px 2px;
+  }
+
+  .ss-chart {
+    gap: 8px;
+  }
+
+  .ss-chart-legend {
+    font-size: 0.38rem;
+  }
+
+  .project-link + .project-link {
+    margin-left: 0;
+    margin-top: 0.75rem;
+  }
+}
+
+
 /* ────────────────────────────────────────
    APPROACH
    ──────────────────────────────────────── */

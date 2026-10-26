@@ -88,6 +88,29 @@ A complete portfolio redesign for Sunny Thumbnails, transforming a conventional 
 
 The project cover uses the supplied screenshot at `images/sunny-thumbnails/cover.png`, displayed in the portfolio's existing browser-frame visual.
 
+### 5. ScopeSnap
+
+A hosted project workspace that gives developers and clients a shared place to manage delivery.
+
+The project includes:
+- Separate developer and client portals
+- Version history and release notes
+- Bugs linked to specific versions, with severity and status tracking
+- Change requests, project conversations, and approval history
+- Project-scoped access controls with Supabase Row Level Security
+- Live updates for shared version and bug activity
+
+**Technologies:**
+- Next.js
+- TypeScript
+- Supabase / PostgreSQL
+- Tailwind CSS
+- Supabase Realtime
+
+[View Live Project](https://scope-snap22.netlify.app/) · [View Source Code](https://github.com/raju-2313/Scope-snap)
+
+The Selected Work entry uses a CSS-built interface preview inside the site's existing browser-frame design, so no extra screenshot asset is required.
+
 ## Tech Stack
 
 ```text
